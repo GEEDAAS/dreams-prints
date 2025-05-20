@@ -21,18 +21,22 @@ Este proyecto fue desarrollado como entrega final del curso Ingeniería de Softw
 
 El sistema está estructurado según el patrón **Modelo-Vista-Controlador (MVC)** para mantener una separación clara entre la lógica del negocio, la presentación y el acceso a datos:
 
-- `app/`
-  - `controllers/` – Lógica de control (Cliente y Administrador)
-  - `models/` – Acceso a datos y operaciones sobre la base de datos
-  - `views/`
-    - `cliente/` – Vistas del cliente (catálogo, cuenta, pagos, etc.)
-    - `admin/` – Vistas del administrador (productos, ideas, pedidos)
-- `css/` – Archivos de estilos personalizados
-- `js/` – Scripts de funcionalidad (AJAX, validaciones, etc.)
-- `includes/` – Archivos reutilizables (conexión a DB, funciones comunes)
-- `assets/` – Imágenes, íconos y recursos gráficos
-- `index.php` – Página principal
-- `.env` – Variables de entorno (configuración local)
+- `Dreams&Prints/`
+  - `app/`
+    - `controllers/` – Lógica de control (Cliente y Administrador)
+    - `models/` – Acceso a datos y operaciones sobre la base de datos
+    - `views/` – Interfaz de usuario separada por tipo de usuario
+      - `cliente/` – Vistas del cliente (catálogo, cuenta, pagos, etc.)
+      - `admin/` – Vistas del administrador (productos, ideas, pedidos)
+      - `Inicio.php` – Vista principal del sistema web
+  - `config/` – Configuración del sistema (credenciales, rutas, constantes)
+  - `public/` – Carpeta pública del servidor (recursos accesibles directamente)
+    - `css/` – Archivos de estilos personalizados
+    - `js/` – Scripts de funcionalidad (AJAX, validaciones, etc.)
+    - `Image/` – Imágenes utilizadas en el sitio (productos, perfiles, etc.)
+    - `index.php` – Punto de entrada principal del sitio
+  - `routes/` – Definición de rutas del sistema (mapa de URLs y controladores)
+  - `.env` – Variables de entorno (configuración local sensible)
 
 ---
 
