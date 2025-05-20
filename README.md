@@ -85,5 +85,6 @@ Sigue estos pasos para ejecutar el sistema en tu entorno local:
 
 5. **Iniciar el sistema**
     Abre tu navegador en:
+    ```bash
     http://localhost/DreamsPrints/public/
     
