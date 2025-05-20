@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5; /* Fondo gris claro */
+      color: #343a40; /* Texto gris oscuro */
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #343a40; /* Gris oscuro */
+      padding: 10px 0;
+      flex-wrap: wrap; /* Permite que los enlaces se ajusten en varias filas */
+    }
+
+    .navigation a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #ff6f61; /* Coral */
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navigation a:hover {
+      background-color: #ff6f61;
+      color: #fff;
+    }
+
+    .navigation .active {
+      background-color: #ff6f61;
+      color: #fff;
+    }
+
+    .navigation .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .navigation .logo img {
+      height: 40px;
+      margin-right: 5px;
+    }
+
+    .navigation .logo span {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .config-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .config-header h1 {
+      text-align: center;
+      color: #ff6f61;
+      margin-bottom: 10px;
+    }
+
+    .config-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .config-form select, .config-form input {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .config-form button {
+      width: 100%;
+      background: linear-gradient(90deg, #ff6f61 0%, #ff9671 100%);
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .config-form button:hover {
+      transform: scale(1.05);
+    }

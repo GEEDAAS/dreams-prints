@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap');
+    
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa; /* Fondo gris claro */
+      color: #343a40; /* Texto gris oscuro */
+    }
+    .top-banner {
+      background: linear-gradient(90deg, #ff6f61 0%, #ff9671 100%);
+      text-align: center;
+      padding: 10px;
+      color: #fff; /* Texto blanco */
+      font-size: 1rem;
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #343a40; /* Gris oscuro */
+      padding: 10px 0;
+      flex-wrap: wrap; /* Permite que los enlaces se ajusten en varias filas */
+    }
+    .navigation a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #ff6f61; /* Coral */
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .navigation a:hover {
+      background-color: #ff6f61; /* Coral */
+      color: #fff; /* Texto blanco */
+    }
+    .navigation .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 20px; /* Mantiene el logo a la izquierda */
+      text-decoration: none;
+      color: #fff;
+    }
+    .navigation .logo img {
+      height: 40px; /* Ajusta el tamaño del logo */
+      margin-right: 5px;
+    }
+    .navigation .logo span {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .navigation .active {
+      background-color: #ff6f61; /* Coral */
+      color: #fff; /* Texto blanco */
+    }
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+    .intro h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      color: #ff6f61; /* Coral */
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .intro span {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #343a40; /* Gris oscuro */
+      animation: fadeIn 2s ease-in-out;
+    }
+    .cta {
+      background: linear-gradient(90deg, #ff6f61 0%, #ff9671 100%);
+      color: #fff; /* Texto blanco */
+      border: none;
+      padding: 15px 30px;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin-top: 20px;
+    }
+    .cta:hover {
+      background-color: #ff4c4c; /* Rojo claro */
+      transform: scale(1.1);
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+    }
+    .images img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      animation: fadeIn 2s ease-in-out;
+      transition: transform 0.3s ease;
+    }
+    .images img:hover {
+      transform: scale(1.1);
+    }
+    .description {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #495057; /* Gris intermedio */
+      animation: fadeIn 2s ease-in-out;
+    }
+    .values {
+      max-width: 800px;
+      margin: 40px auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #495057; /* Gris intermedio */
+      text-align: left;
+      padding: 20px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .values h2 {
+      font-size: 2rem;
+      color: #ff6f61; /* Coral */
+      margin-bottom: 15px;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-height: 400px; /* Ajusta la altura según lo desees */
+      overflow: hidden;
+      margin: 20px 0; /* Espaciado entre secciones */
+    }
+    #bg-video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    /* Media queries para hacer la página más responsiva */
+    @media (max-width: 600px) {
+      .intro h1 {
+        font-size: 2rem; /* Ajustar el tamaño de fuente en pantallas pequeñas */
+      }
+      .intro span {
+        font-size: 1rem; /* Ajustar el tamaño de fuente en pantallas pequeñas */
+      }
+      .cta {
+        width: 100%; /* Botón a lo largo del contenedor en pantallas pequeñas */
+      }
+      .images img {
+        width: 100%; /* Imágenes a lo largo del contenedor en pantallas pequeñas */
+      }
+      .values h2 {
+        font-size: 1.5rem; /* Ajustar el tamaño de fuente en pantallas pequeñas */
+      }
+    }
