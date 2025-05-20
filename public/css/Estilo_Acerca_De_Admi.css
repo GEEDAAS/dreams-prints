@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5; /* Fondo gris claro */
+      color: #343a40; /* Texto gris oscuro */
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background-color: #343a40; /* Gris oscuro */
+      padding: 10px 0;
+      flex-wrap: wrap; /* Añadido para que la navegación se apile en pantallas pequeñas */
+    }
+
+    .navigation a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #ff6f61; /* Coral */
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navigation a:hover {
+      background-color: #ff6f61; /* Coral */
+      color: #fff; /* Texto blanco */
+    }
+
+    .navigation .active {
+      background-color: #ff6f61; /* Coral */
+      color: #fff; /* Texto blanco */
+    }
+
+    .about-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .about-header h1 {
+      font-size: 2rem;
+      color: #ff6f61; /* Coral */
+      margin-bottom: 10px;
+    }
+
+    .about-header p {
+      font-size: 1rem;
+      color: #495057; /* Gris intermedio */
+    }
+
+    .about-content {
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .about-content h2 {
+      font-size: 1.5rem;
+      color: #ff6f61; /* Coral */
+      margin-bottom: 10px;
+    }
+    .about-content p {
+      font-size: 1rem;
+      color: #495057; /* Gris intermedio */
+    }
+
+    .about-content ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .about-content ul li {
+      font-size: 1rem;
+      color: #495057; /* Gris intermedio */
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #343a40; /* Gris oscuro */
+      color: #fff; /* Texto blanco */
+      margin-top: 40px;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .footer a {
+      color: #ff6f61; /* Coral */
+      text-decoration: none;
+      margin-left: 5px;
+    }
+
+    .navigation .logo {
+      display: flex;
+      align-items: center;
+      margin-right: 20px; /* Mantiene el logo a la izquierda */
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .navigation .logo img {
+      height: 40px; /* Ajusta el tamaño del logo */
+      margin-right: 5px;
+    }
+
+    .navigation .logo span {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .edit-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #28a745;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+
+    .edit-button:hover {
+      background-color: #218838;
+    }
+
+    .save-button {
+      display: none;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+
+    .save-button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        margin: 20px;
+        padding: 10px;
+      }
+      .about-header h1 {
+        font-size: 1.5rem;
+      }
+
+      .about-header p {
+        font-size: 0.9rem;
+      }
+
+      .about-content h2 {
+        font-size: 1.2rem;
+      }
+
+      .about-content p, .about-content ul li {
+        font-size: 0.9rem;
+      }
+
+      .footer p {
+        font-size: 0.9rem;
+      }
+
+      .footer a {
+        font-size: 0.9rem;
+      }
+    }

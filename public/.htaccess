@@ -1,0 +1,11 @@
+# Fuerza codificación UTF-8 para todo el proyecto
+AddDefaultCharset utf-8
+
+# Evita que los usuarios vean el contenido de directorios sin index
+Options -Indexes
+
+# Bloquea el acceso a archivos confidenciales
+<FilesMatch "\.(htaccess|env|sql|ini|log|sh|bak)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>

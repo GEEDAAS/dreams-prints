@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa; /* Fondo gris claro */
+      color: #343a40; /* Texto gris oscuro */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 90%; /* Cambiado para que sea más responsivo */
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #ff6f61; /* Coral */
+    }
+
+    .login-container .input-group {
+      margin-bottom: 20px;
+    }
+
+    .login-container .input-group label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      color: #495057; /* Gris intermedio */
+    }
+
+    .login-container .input-group input {
+      width: 100%; /* Cambiado para que sea más responsivo */
+      padding: 10px;
+      border: 1px solid #ced4da; /* Gris claro */
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .login-container .login-button {
+      background-color: #ff6f61; /* Coral */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-container .login-button:hover {
+      background-color: #ff4c4c; /* Rojo claro */
+    }
+
+    .login-container .forgot-password,
+    .login-container .register {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #6c757d; /* Gris mediano */
+    }
+
+    .login-container .forgot-password a,
+    .login-container .register a {
+      color: #ff6f61; /* Coral */
+      text-decoration: none;
+    }
+
+    .login-container .forgot-password a:hover,
+    .login-container .register a:hover {
+      text-decoration: underline;
+    }
+
+    .admin-button {
+      background-color: #007bff; /* Azul */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .admin-button:hover {
+      background-color: #0056b3; /* Azul más oscuro */
+    }
+
+    /* Media queries para hacer la página más responsiva */
+    @media (max-width: 600px) {
+      .login-container {
+        padding: 20px; /* Ajustar el padding en pantallas pequeñas */
+      }
+
+      .login-container h2 {
+        font-size: 1.5rem; /* Ajustar el tamaño de fuente en pantallas pequeñas */
+      }
+
+      .login-container .login-button,
+      .login-container .admin-button {
+        width: 100%; /* Botones a lo largo del contenedor en pantallas pequeñas */
+      }
+    }

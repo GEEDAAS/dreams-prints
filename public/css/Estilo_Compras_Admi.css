@@ -1,0 +1,101 @@
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.compras-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card-compra {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-left: 6px solid #007bff;
+}
+
+.compra-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.compra-header strong {
+    font-size: 1.1rem;
+    color: #007bff;
+}
+
+.fecha {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.card-compra p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.productos-lista ul {
+    margin: 0.5rem 0 0 1.2rem;
+    padding-left: 0;
+}
+
+.productos-lista li {
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+}
+
+.impresion {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.estado {
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    background-color: #007bff;
+}
+
+.estado.pendiente { background-color: #ff9800; }
+.estado.aprobado { background-color: #4caf50; }
+.estado.rechazado { background-color: #e53935; }
+.estado.cancelada { background-color: #999; }
+.estado.completada { background-color: #673ab7; }
+
+select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 0.8rem;
+    background-color: #fff;
+    color: #333;
+}
+
+form label {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.6rem;
+}
+
+form p {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0;
+}
