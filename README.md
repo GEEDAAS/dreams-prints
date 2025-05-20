@@ -21,21 +21,18 @@ Este proyecto fue desarrollado como entrega final del curso Ingeniería de Softw
 
 El sistema está estructurado según el patrón **Modelo-Vista-Controlador (MVC)** para mantener una separación clara entre la lógica del negocio, la presentación y el acceso a datos:
 
-Dreams&Prints/
-│
-├── app/
-│ ├── controllers/ # Lógica de control (Cliente y Administrador)
-│ ├── models/ # Acceso a datos y operaciones sobre la base de datos
-│ └── views/ # Interfaz de usuario dividida en:
-│ ├── cliente/ # Vistas del cliente (catálogo, cuenta, pagos, etc.)
-│ └── admin/ # Vistas del administrador (productos, ideas, pedidos)
-│
-├── css/ # Archivos de estilos personalizados
-├── js/ # Scripts de funcionalidad (AJAX, validaciones, etc.)
-├── includes/ # Archivos reutilizables (conexión a DB, funciones comunes)
-├── assets/ # Imágenes, íconos y recursos gráficos
-├── index.php # Página principal
-└── .env # Variables de entorno (configuración local)
+- `app/`
+  - `controllers/` – Lógica de control (Cliente y Administrador)
+  - `models/` – Acceso a datos y operaciones sobre la base de datos
+  - `views/`
+    - `cliente/` – Vistas del cliente (catálogo, cuenta, pagos, etc.)
+    - `admin/` – Vistas del administrador (productos, ideas, pedidos)
+- `css/` – Archivos de estilos personalizados
+- `js/` – Scripts de funcionalidad (AJAX, validaciones, etc.)
+- `includes/` – Archivos reutilizables (conexión a DB, funciones comunes)
+- `assets/` – Imágenes, íconos y recursos gráficos
+- `index.php` – Página principal
+- `.env` – Variables de entorno (configuración local)
 
 ---
 
