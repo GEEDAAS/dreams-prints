@@ -51,23 +51,55 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'Cliente') {
     <div class="about-content">
       <!-- Sección de Problemática -->
       <h2>Problemática</h2>
-      <p align="justify">...</p>
+      <p align="justify">
+        En el país no hay grandes empresas u organizaciones que realicen de manera formal la producción
+        de piezas personalizadas en impresión 3D por pedido, por lo tanto, es un área de oportunidad para cubrir un
+        mercado con poca o nula oferta.
+      </p>
+      <p align="justify">
+        He aquí algunas problemáticas que analizamos para este proyecto:
+      </p>
       <ul align="justify">
-        <li><strong>...</strong> ...</li>
-        <!-- Resto de las problemáticas detalladas -->
+        <li><strong>Escasez de competencia en la fabricación de piezas personalizadas en 3D por pedido de manera
+            formal:</strong> Se observa una notable ausencia de competidores en el mercado de fabricación de piezas en
+          3D por pedido de manera formal.</li>
+        <li><strong>Falta de aplicaciones para pedido en línea de piezas impresas:</strong> Hasta la fecha, no se ha
+          identificado ninguna aplicación dedicada exclusivamente al pedido en línea de piezas impresas en 3D.</li>
+        <li><strong>Baja popularidad de los servicios de impresión 3D en México y en especial en la región:</strong> En
+          México, y en particular en la ciudad de León, adquirir servicios de impresión 3D no es una práctica común
+          debido a la escasez de negocios que ofrezcan este tipo de servicios.</li>
       </ul>
 
       <!-- Sección de Justificación -->
       <h2>Justificación</h2>
-      <p align="justify">...</p>
+      <p align="justify">La escasa competencia en la fabricación de piezas en 3D por pedido, la falta de aplicaciones
+        dedicadas para realizar pedidos en línea de piezas impresas y la baja popularidad de los servicios de impresión
+        3D en México y en especial en la ciudad de León, Guanajuato, representan oportunidades significativas para
+        introducir una solución innovadora que responda a estas necesidades.</p>
+      <p align="justify">Además, esta aplicación web permitirá a los usuarios solicitar y personalizar piezas impresas
+        en 3D de manera eficiente y segura, mediante una plataforma intuitiva y fácil de usar. Con la integración de
+        servicios en la nube, se facilitará la gestión de pedidos, el seguimiento de la producción y la comunicación
+        entre los usuarios y los proveedores de servicios de impresión 3D, lo que mejorará la experiencia del usuario y
+        aumentará la eficiencia operativa.</p>
+      <p align="justify">Los principales beneficiados que podría tener el desarrollo de la investigación serían los
+        siguientes:</p>
       <ul align="justify">
-        <li><strong>Usuarios:</strong> ...</li>
-        <li><strong>Proveedores de servicios de impresión 3D:</strong> ...</li>
-        <li><strong>Empresas locales:</strong> ...</li>
-        <li><strong>Sector Industrial:</strong> ...</li>
-        <li><strong>Investigación y desarrollo:</strong> ...</li>
+        <li><strong>Usuarios:</strong> Los usuarios que requieren piezas impresas en 3D se beneficiarían al tener acceso
+          a una plataforma conveniente y eficiente para solicitar y personalizar sus piezas.</li>
+        <li><strong>Proveedores de servicios de impresión 3D:</strong> La aplicación les permitiría gestionar de manera
+          más eficiente los pedidos y la producción, mejorando la comunicación con los clientes y optimizando sus
+          procesos internos.</li>
+        <li><strong>Empresas locales:</strong> Las empresas locales que colaboran como proveedores de servicios de
+          impresión 3D podrían experimentar un aumento en la demanda de sus productos creados con esta tecnología.</li>
+        <li><strong>Sector Industrial:</strong> Esto podría conducir a una mayor innovación en el diseño y la
+          fabricación de productos, así como a una mayor eficiencia en los procesos de producción.</li>
+        <li><strong>Investigación y desarrollo:</strong> Los centros educativos que realizan investigación y desarrollo
+          en el campo de la impresión 3D podrían beneficiarse al tener acceso a una amplia gama de servicios y opciones
+          de impresión para sus proyectos.</li>
       </ul>
-      <p align="justify">También se incluye más sectores...</p>
+      <p align="justify">También se incluye más sectores como la manufacturera, la de salud, sustentabilidad,
+        arquitectura y diseño, y muchas otras más que se podrían beneficiar de una aplicación móvil que optimiza el
+        proceso de fabricación de piezas en impresión 3D.</p>
     </div>
   </div>
 
