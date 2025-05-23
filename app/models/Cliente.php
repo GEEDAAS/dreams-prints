@@ -52,4 +52,26 @@ class Cliente {
         return $stmt->execute([$nuevaClaveHash, $correo]); // Se ejecuta con los datos proporcionados
     }
 
+    // Obtiene todos los clientes con estado 'Activo'
+    public static function obtenerTodos() {
+        $conexion = self::getConexion(); // ← corregido
+        $stmt = $conexion->query("SELECT * FROM cliente WHERE estadoCliente = 'Activo'");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    // Busca clientes por nombre o correo electrónico (solo activos)
+    public static function buscarPorNombreOCorreo($termino) {
+        $conexion = self::getConexion(); // ← corregido
+        $stmt = $conexion->prepare("SELECT * FROM cliente WHERE (nombreCliente LIKE ? OR correoCliente LIKE ?) AND estadoCliente = 'Activo'");
+        $stmt->execute(["%$termino%", "%$termino%"]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    // Cambia el estado del cliente (por ejemplo: de Activo a Inactivo)
+    public static function cambiarEstado($id, $nuevoEstado) {
+        $conexion = self::getConexion(); // ← corregido
+        $stmt = $conexion->prepare("UPDATE cliente SET estadoCliente = ? WHERE idCliente = ?");
+        $stmt->execute([$nuevoEstado, $id]);
+    }
+
 }

@@ -305,4 +305,24 @@ switch ($page) {
         $controller = new NuevaContrasenaController();
         $controller->index();
         break;
+
+    // Agrega dentro del switch o lógica de enrutamiento
+    case 'ConsultarCliente':
+        require '../app/controllers/ConsultarClienteController.php';
+        $controlador = new ConsultarClienteController();
+        $controlador->index();
+        break;
+
+    case 'buscarCliente':
+        require_once '../app/controllers/ConsultarClienteController.php';
+        $controller = new ConsultarClienteController();
+        $controller->buscar();
+        break;
+
+    case 'darDeBajaCliente':
+        require_once '../app/controllers/ConsultarClienteController.php';
+        $controller = new ConsultarClienteController();
+        $controller->darDeBaja();
+        break;
+
 }

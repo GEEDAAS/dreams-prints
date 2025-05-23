@@ -35,6 +35,7 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'Administrador') {
     <a href="index.php?page=formasPagoAdmin"><i class="fas fa-credit-card"></i> Formas de Pago</a>
     <a href="index.php?page=ideaAdmin"><i class="fas fa-tools"></i> Administrar Ideas</a>
     <a href="index.php?page=acercaDeAdmin"><i class="fas fa-info-circle"></i> Acerca de</a>
+    <a href="index.php?page=ConsultarCliente"><i class="fas fa-search"></i> Consultar Clientes</a>
     <a href="index.php?page=cerrar"><i class="fas fa-user"></i> Cierre Sesión</a>
     <a href="index.php?page=cuenta_admin"><i class="fas fa-user-shield"></i> Cuenta</a>
   </nav>
