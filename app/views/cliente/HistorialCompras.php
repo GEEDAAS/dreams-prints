@@ -41,11 +41,12 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'Cliente') {
     <!-- Contenedor principal del historial -->
     <div class="historial-container">
         <?php if (!empty($compras)): ?>
+            <?php $numero = 1; ?>
             <?php foreach ($compras as $compra): ?>
                 <div class="card-compra">
                     <!-- Encabezado con número de compra y fecha -->
                     <div class="card-header">
-                        <strong>Compra #<?= $compra['idCompra'] ?></strong>
+                        <strong>Compra #<?= $numero ?></strong>
                         <span class="fecha"><?= $compra['fechaCompra'] ?></span>
                     </div>
 
@@ -56,6 +57,13 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'Cliente') {
                         <?= $compra['estadoCompra'] ?>
                         </span>
                     </p>
+
+                    <?php if (!empty($compra['fecha_estimada'])): ?>
+                    <p><strong>Entrega estimada:</strong>
+                        <span class="fecha-estimada"><?= date("d/m/Y", strtotime($compra['fecha_estimada'])) ?></span>
+                    </p>
+                    <?php endif; ?>
+
                     <p><strong>Tipo de pago:</strong> <?= $compra['pago']['tipoPago'] ?></p>
 
                     <?php if (isset($compra['pago'])): ?>
@@ -85,6 +93,7 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'Cliente') {
                         </ul>
                     </div>
                 </div>
+                <?php $numero++; ?>
             <?php endforeach; ?>
         <?php else: ?>
             <!-- Si no hay compras aún -->

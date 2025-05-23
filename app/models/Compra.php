@@ -15,14 +15,20 @@ class Compra {
 
     // Método público para registrar una nueva compra
     public function registrarCompra($idCliente, $total) {
-        // Consulta SQL para insertar una nueva compra con estado 'Pendiente' y fecha actual
-        $sql = "INSERT INTO compra (idCliente, fechaCompra, estadoCompra, montoTotal)
-                VALUES (:idCliente, CURDATE(), 'Pendiente', :total)";
+        // Calcula la fecha estimada de entrega (2 días después de hoy)
+        $fechaEstimada = date('Y-m-d', strtotime('+2 days'));
+
+        // Consulta SQL para insertar la compra con fecha estimada
+        $sql = "INSERT INTO compra (idCliente, fechaCompra, estadoCompra, montoTotal, fecha_estimada)
+                VALUES (:idCliente, CURDATE(), 'Pendiente', :total, :fecha)";
+        
         $stmt = $this->conn->prepare($sql); // Se prepara la consulta
         $stmt->bindParam(':idCliente', $idCliente); // Se vincula el parámetro idCliente
         $stmt->bindParam(':total', $total); // Se vincula el parámetro total
+        $stmt->bindParam(':fecha', $fechaEstimada); // Se vincula la fecha estimada
+        
         $stmt->execute(); // Se ejecuta la inserción
-        return $this->conn->lastInsertId(); // Se retorna el ID generado de la compra
+        return $this->conn->lastInsertId(); // Retorna el ID de la nueva compra
     }
 
     // Método público para obtener todas las compras ordenadas por fecha

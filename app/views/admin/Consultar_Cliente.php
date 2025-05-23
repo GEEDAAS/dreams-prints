@@ -98,7 +98,7 @@ a:hover {
         <a href="index.php?page=formasPagoAdmin"><i class="fas fa-credit-card"></i> Formas de Pago</a>
         <a href="index.php?page=ideaAdmin"><i class="fas fa-tools"></i> Administrar Ideas</a>
         <a href="index.php?page=acercaDeAdmin"><i class="fas fa-info-circle"></i> Acerca de</a>
-        <a href="index.php?c=ConsultarCliente" class="active"><i class="fas fa-search"></i> Consultar Clientes</a>
+        <a href="index.php?page=ConsultarCliente" class="active"><i class="fas fa-search"></i> Consultar Clientes</a>
         <a href="index.php?page=cerrar"><i class="fas fa-user"></i> Cierre Sesión</a>
         <a href="index.php?page=cuenta_admin"><i class="fas fa-user-shield"></i> Cuenta</a>
     </nav>
@@ -107,6 +107,7 @@ a:hover {
     <form method="POST" action="index.php?page=buscarCliente">
         <input type="text" name="termino" placeholder="Buscar por nombre o correo" required>
         <button type="submit">Buscar</button>
+        <a href="index.php?page=ConsultarCliente" style="margin-left: 10px;"> Ver todos</a>
     </form>
 
     <table>
